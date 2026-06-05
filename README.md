@@ -8,3 +8,5 @@ Published files:
 - `https://jolie1204.github.io/wemo-controller-privacy/`
 - `https://jolie1204.github.io/glass-skin-routine-privacy/`
 - `https://jolie1204.github.io/countdown-cabinet-privacy/`
+- `https://jolie1204.github.io/gridcage-sudoku/`
+- `https://jolie1204.github.io/gridcage-sudoku-privacy/`
