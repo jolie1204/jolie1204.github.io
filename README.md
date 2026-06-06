@@ -11,3 +11,5 @@ Published files:
 - `https://jolie1204.github.io/countdown-cabinet-privacy/`
 - `https://jolie1204.github.io/gridcage-sudoku/`
 - `https://jolie1204.github.io/gridcage-sudoku-privacy/`
+- `https://jolie1204.github.io/sudoku-clear/`
+- `https://jolie1204.github.io/sudoku-clear-privacy/`
