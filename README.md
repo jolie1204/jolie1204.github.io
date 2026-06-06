@@ -6,6 +6,7 @@ Published files:
 
 - `https://jolie1204.github.io/app-ads.txt`
 - `https://jolie1204.github.io/wemo-controller-privacy/`
+- `https://jolie1204.github.io/glass-skin-routine/`
 - `https://jolie1204.github.io/glass-skin-routine-privacy/`
 - `https://jolie1204.github.io/countdown-cabinet-privacy/`
 - `https://jolie1204.github.io/gridcage-sudoku/`
