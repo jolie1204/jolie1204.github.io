@@ -34,6 +34,12 @@
       margin-top: 2rem;
     }
 
+    code {
+      background: #f6f8fa;
+      border-radius: 4px;
+      padding: 0.1rem 0.25rem;
+    }
+
     a {
       color: #0969da;
     }
@@ -42,41 +48,53 @@
 <body>
   <main>
     <h1>Privacy Policy for Glass Skin Routine</h1>
-    <p><strong>Effective date:</strong> May 21, 2026</p>
+    <p><strong>Effective date:</strong> October 7, 2026</p>
 
-    <p>Glass Skin Routine is an Android app for tracking simple cosmetic skincare routines.</p>
+    <p>Glass Skin Routine is a K-beauty focus, ingredient, layering, local Shelf, and read-only Daily routine helper app for Android and iOS.</p>
 
-    <h2>Information the app stores locally</h2>
-    <p>The app lets you save routine steps, checklist progress, product names, opened dates, and product notes.</p>
-    <p>This information is stored locally on your device. The app does not require an account and does not send your routine or product information to a developer-operated server.</p>
+    <h2>Information stored on your device</h2>
+    <p>Glass Skin Routine stores app data locally on your device. Skincare data remains local. The app has no account, login, analytics SDK or developer-operated tracking SDK. Optional feedback uses a separate developer-operated server.</p>
+    <p>Local data may include your selected skin goal or focus state, product names you add to Shelf, product category, optional product note, morning/evening usage flags, product timestamps, ingredient family IDs reserved for future local use, and a local legacy migration marker.</p>
+    <p>The current local storage keys include <code>glass_skin_saved_tray_v1</code>, <code>glass_skin_shelf_products_v1</code>, <code>glass_skin_shelf_recovery_v1</code>, <code>glass_skin_saved_guides_v1</code>, and <code>glass_skin_legacy_migration_v1</code>.</p>
+
+    <p>If Shelf data is damaged, readable products remain available. Before replacing damaged data, the app preserves the original locally for recovery. These copies can contain earlier product names and notes even after editing or deleting a visible product. They are not sent to our server or logged. Clearing the app’s storage in Android settings removes these copies together with other local app data.</p>
+
+    <h2>Legacy product migration</h2>
+    <p>If you update from an older Glass Skin Routine app, the current app may read old local app data on the same device only to import saved products into the current Shelf.</p>
+    <p>The migration is local-only. It is intended to import product-like data such as product names, categories, notes, and morning/evening use flags. It does not intentionally import check-ins, completion history, streaks, reminders, progress state, or Glow state.</p>
+
+    <h2>Ads and consent</h2>
+    <p>The app is a free app supported by Google Mobile Ads banner ads. It includes the Google Mobile Ads SDK and Google's User Messaging Platform consent flow.</p>
+    <p>Google Mobile Ads and UMP may process device, advertising, consent, diagnostic, and ad delivery information according to Google's advertising and privacy policies. Glass Skin Routine does not intentionally send your Shelf product names, product notes, selected focus, or Daily routine helper contents to a developer-operated server, and it does not intentionally pass those Shelf/focus details to the ad SDK.</p>
+    <p>Where required, the app may show a consent message before requesting ads. If consent or ad initialization fails, the app should continue to work and may simply show no banner.</p>
+
+    <h2>Data transmission</h2>
+    <p>In the app release, Glass Skin Routine does not intentionally transmit your focus choices, Shelf products, notes, or Daily routine helper data off your device.</p>
+    <p>The app does not include analytics SDK, developer-operated tracking SDK, backend sync, or account login.</p>
+    <p>Optional feedback is the limited exception described below. Other network features require updated disclosures before release.</p>
 
     <h2>Permissions</h2>
-    <p>The app does not request access to your camera, photos, contacts, precise location, microphone, SMS, Health Connect, or health records.</p>
-    <p>The app uses internet access for ads and consent or privacy messaging.</p>
+    <p>The app release does not request access to your camera, photos, face data, contacts, location, microphone, SMS, Health Connect, health records, or tracking permission.</p>
 
-    <h2>Advertising and consent</h2>
-    <p>The app uses Google AdMob to show ads and Google User Messaging Platform to manage consent where required.</p>
-    <p>Google Mobile Ads SDK may collect and share information such as approximate location inferred from IP address, app interactions, diagnostics, and device or other identifiers, including the Android advertising ID and app set ID. Google states that this data is used for advertising, analytics, fraud prevention, security, and compliance, and that data is encrypted in transit.</p>
-    <p>You can learn more about how Google uses information from apps that use its advertising services at:</p>
-    <p><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
-    <p>You can manage or reset your Android advertising ID in Android system settings. Where available, the app also shows privacy options provided by Google's consent SDK.</p>
-
-    <h2>Accounts</h2>
-    <p>The app does not allow users to create accounts and does not support logging in with an external account.</p>
-
-    <h2>Health and beauty disclaimer</h2>
-    <p>Glass Skin Routine provides general cosmetic routine tracking and beauty tips. It does not provide medical advice, diagnosis, treatment, or guaranteed skincare results.</p>
+    <h2>Privacy and safety boundaries</h2>
+    <p>Glass Skin Routine provides general cosmetic guidance, skin goals chosen by the user, ingredient clues, and layering cues.</p>
+    <p>The app does not provide medical advice, diagnosis, treatment, skin scoring, face scan, product selling, product recommendations, affiliate links, or guaranteed beauty outcomes.</p>
     <p>For serious, persistent, or medical skin concerns, consult a qualified professional.</p>
 
+    <h2>Optional Feedback</h2>
+    <p>Only when you tap Send, the app sends your selected feedback category and message, app version/build, Android or iOS platform, display language, and a randomly generated submission receipt to MeOnMesh over HTTPS. The receipt identifies a submission, not a person or device. The current form does not attach a guide ID; a future contextual form must disclose that separately.</p>
+    <p>Feedback is used to review issues and improve the app. It is stored in a private administrator inbox on the MeOnMesh server, not forwarded by email or published. No name, email, account or stable device identifier is requested. Shelf products, product notes, routines, focus choices and search history are not attached. Please do not include personal, health or other sensitive information in free text. We cannot provide individual replies without contact information.</p>
+    <p>Feedback has a 90-day retention period and can be removed sooner by the administrator. Expired records are removed by scheduled cleanup and before inbox reads. Server snapshots, if configured by the hosting provider, may have separate retention. The feedback database does not store IP addresses; the web server temporarily uses IP addresses for abuse rate limiting. Feedback-route access logs are disabled, but infrastructure security logs may exist.</p>
+    <p>An unsent draft stays in application memory while the app is running; it is not saved to local storage. Closing the app may discard it. No draft is transmitted before Send. Network failures keep the draft for retry while the app remains running.</p>
     <h2>Data deletion</h2>
-    <p>Because the app does not create user accounts or store data on a developer-operated server, there is no account deletion process. You can remove locally stored app data by using the in-app reset option, clearing the app's storage, or uninstalling the app from your device.</p>
-    <p>For data handled by Google advertising services, use the privacy controls provided by Google and Android.</p>
+    <p>You can delete products from Shelf inside the app. You can also clear local app data through your device settings. If you delete or uninstall the app, local app data may be removed by the operating system depending on your device settings.</p>
+    <p>There is no account to delete. Feedback follows the 90-day retention above. You can contact us about deletion; locating an entry without an account or email may require its approximate date and details.</p>
 
     <h2>Children</h2>
     <p>The app is intended for a general audience and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
 
     <h2>Changes</h2>
-    <p>This policy may be updated when the app's behavior or third-party services change. The effective date at the top of this page will be updated when changes are made.</p>
+    <p>This policy may be updated when the app changes. The effective date at the top of this page will be updated when changes are made.</p>
 
     <h2>Contact</h2>
     <p>For privacy questions about Glass Skin Routine, contact:</p>
