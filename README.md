@@ -51,3 +51,7 @@ context is introduced. Existing URLs, other products and app-ads.txt are unchang
 Checks: parsed HTML, verified required scope/control/privacy statements and
 checked whitespace. Canonical HTTP verification is recorded in the iOS app log
 after Pages deployment. This policy change does not submit or release the app.
+
+Follow-up: ad privacy choices/retry controls live in Settings → Advertising so
+the footer has exactly one banner row. Verified the HTML and required settings
+route; no URL, ad configuration or data-processing claim changed.
