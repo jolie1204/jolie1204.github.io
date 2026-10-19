@@ -39,3 +39,15 @@ Checks: static HTML structure/link validation and source-scope review. Publicati
 and canonical HTTP verification are recorded in the app repository's README.
 This does not reserve an App Store name, change store/account records or claim
 trademark clearance, store approval or live ad serving.
+
+## Smart Home Status navigation and explicit device controls — October 19, 2026
+
+Updated only the iOS policy: one shared footer above four bottom tabs, UMP checks
+at app launch independently of Home/LAN permission, and ephemeral explicit On/Off
+with fresh preflight/readback. Removed the obsolete local-tools-only banner
+placement and home-display-name setting claims. No Home/device advertising
+context is introduced. Existing URLs, other products and app-ads.txt are unchanged.
+
+Checks: parsed HTML, verified required scope/control/privacy statements and
+checked whitespace. Canonical HTTP verification is recorded in the iOS app log
+after Pages deployment. This policy change does not submit or release the app.
