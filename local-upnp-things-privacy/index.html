@@ -42,44 +42,44 @@
 <body>
   <main>
     <h1>Privacy Policy for Local UPnP Things</h1>
-    <p><strong>Effective date:</strong> June 6, 2026</p>
+    <p><strong>Effective date:</strong> October 19, 2026</p>
 
-    <p>Local UPnP Things is a local-network controller for compatible local UPnP/SOAP Things on the user's Wi-Fi/LAN.</p>
+    <p>Local UPnP Things is an independent iPhone and iPad app for checking supported accessories already added to Apple Home and using optional local UPnP/SOAP device tools. It is provided by MeOnMesh. The app does not require a developer-operated cloud account.</p>
 
-    <h2>Local Network access</h2>
-    <p>The app requests Local Network access to find and control compatible local Things on the same Wi-Fi/LAN. The app may use Bonjour/mDNS, local descriptor probing, SSDP/UPnP diagnostics, local HTTP device description requests, and local SOAP requests.</p>
-    <p>Local control works only when the iPhone or iPad is on the same Wi-Fi/LAN as the compatible local Thing.</p>
+    <h2>Optional Apple Home access</h2>
+    <p>The app asks for Home access only when you choose Connect. With permission, it reads accessible homes, scenes, accessory and service names, identifiers, supported characteristics and current responses. Supported HomeKit/HAP and Matter accessories already in Apple Home use Apple's HomeKit API. Support depends on the characteristics Apple exposes; the app does not create its own Matter fabric or pairing service.</p>
+    <p>Checks compare current responses with your chosen power goals. Applying Home power goals requires your explicit selection, review and Apply. Home access is optional: local network tools remain available if you decline it. You can change Home access in iOS Settings.</p>
+    <p>Home data is not sent to advertising services, analytics services or a developer-operated server, and is not used for advertising, marketing or profiling. Apple manages its own Home data, Apple Account, home-hub and network services under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 
-    <h2>Information stored locally</h2>
-    <p>The app may store saved Thing metadata locally on the user's device, including device name, type, model, local descriptor URL, local control URL, local event URL, favorite status, last seen time, and last known on/off state.</p>
-    <p>This information is used to show saved Things, favorites, state labels, and local control options in the app.</p>
+    <h2>Optional local network tools</h2>
+    <p>After opening Local devices, you can choose Scan or another explicit local action. The app may use Bonjour/mDNS, local descriptor probing, SSDP/UPnP diagnostics, local HTTP device descriptions and SOAP requests to discover and control compatible local devices. These tools require the same Wi-Fi/LAN and may handle local device names, IP addresses, model and firmware information, serial numbers and device responses.</p>
+    <p>The app does not upload this local device information to a developer-operated server or provide it as advertising context. Home and local-network records are kept separate rather than automatically matched by name or IP address.</p>
 
-    <h2>Information not sent to an owner-operated server</h2>
-    <p>The app does not send local Thing names, local IP addresses, local URLs, local network details, or local control status to an owner-operated server.</p>
-    <p>The app does not require a cloud account and does not provide internet-based remote control.</p>
+    <h2>Information stored on your device</h2>
+    <p>Your app-local checklists store a list identifier and title, exact home/accessory/service/characteristic references and desired Boolean power goals. The checklist folder is excluded from backup and uses iOS complete file protection and restricted file permissions. Current Home names, live responses, capabilities, reports, correction selections and approvals are not saved in that checklist store or synchronized by an app-operated cloud service.</p>
+    <p>Local network tools may separately save known device metadata, local descriptor/control/event URLs, favorites, custom labels, display order, last-seen time and last-known state. Appearance preferences such as the selected background and home display name are also stored locally. Unlike the checklist folder, local device metadata is not excluded from device backups. Apple Home and iOS may maintain their own data independently of this app.</p>
 
-    <h2>Advertising</h2>
-    <p>The app may show Google AdMob banner advertisements.</p>
-    <p>Google Mobile Ads SDK may collect or receive information such as device identifiers, advertising identifiers, app interactions, diagnostics, and ad interaction data to provide, measure, and improve advertising, subject to Google's own policies.</p>
-    <p>You can manage ad personalization and advertising identifiers in iOS settings. Where available, the app may show privacy or consent choices provided by Google's advertising tools.</p>
-    <p>You can learn more about how Google uses information from apps that use its advertising services at:</p>
-    <p><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+    <h2>Advertising, consent and device storage</h2>
+    <p>The main app includes Google AdMob and Google User Messaging Platform (UMP). Banners are placed in local network tools, not on the Home check or correction screens. Opening Local devices starts a UMP information check with Google, before any local Scan. The app checks UMP information and any required consent form before requesting ads. Required privacy options are available from the local tools' Ad privacy choices control. If the privacy check fails, ads are suppressed and device tools remain usable.</p>
+    <p>Ad requests disable personalization and publisher first-party IDs and include a non-personalized-ads signal. The app disables the Mobile Ads SDK's crash-reporting feature and does not request Apple's tracking permission. No separate Firebase analytics SDK is included. Home data, local device details, checklist goals and check/correction events are not supplied as ad targeting, keywords, content URLs or publisher user IDs.</p>
+    <p>Non-personalized ads are not data-free and do not remove consent requirements. Google's advertising and consent services may use IP addresses (including approximate location inferred from them), device or other identifiers available under your settings, advertising interactions, product interactions, performance information and diagnostics. They may use SDK/device storage for consent choices, frequency capping, measurement, fraud prevention, security and compliance. Disabling one SDK feature does not mean Google's services process no data.</p>
+    <p>You can manage available choices through Ad privacy choices and iOS privacy settings. Where a choice limits or prevents advertising, the basic tools remain available. Learn more in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from apps that use its services</a> and <a href="https://policies.google.com/privacy">Google's privacy policy</a>. This policy page contains no advertising tags or consent-message scripts.</p>
 
-    <h2>Accounts</h2>
-    <p>The app does not allow users to create accounts and does not support logging in with an external account.</p>
+    <h2>Accounts and support</h2>
+    <p>The app has no developer-operated sign-in or user account. Apple Home may require an Apple Account managed by Apple. If you contact support, the email address and information you choose to provide are used to respond to your request. Please do not send Wi-Fi passwords, accessory setup codes, household identifiers or other device secrets.</p>
 
-    <h2>Data deletion</h2>
-    <p>Because the app does not create user accounts or store local Thing data on an owner-operated server, there is no account deletion process. You can remove locally stored app data by uninstalling the app from your device.</p>
-    <p>For data handled by Google advertising services, use the privacy controls provided by Google and iOS.</p>
+    <h2>Deletion and privacy requests</h2>
+    <p>You can delete an app checklist in the app or uninstall the app to remove its local app data from that installation. Copies of local device metadata may remain in device or iCloud backups and must be managed using Apple’s backup controls. Deleting a checklist or uninstalling does not remove Apple Home accessories, scenes or Wi-Fi settings. To manage Apple's Home data, use Apple's Home and privacy controls. To manage data held by Google's services, use the privacy controls and request processes described in Google's policy; uninstalling this app does not itself delete data held by Google.</p>
+    <p>For questions or privacy requests about information you provided directly to MeOnMesh, contact <a href="mailto:meonmesh@gmail.com">meonmesh@gmail.com</a>. We do not maintain a server copy of your Home or local-device records to retrieve or delete.</p>
 
     <h2>Children</h2>
-    <p>The app is intended for a general audience and is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+    <p>The app is designed for people managing home-network devices and is not directed to children under 13. We do not knowingly collect personal information from children. Contact us with any concerns.</p>
 
     <h2>Non-affiliation</h2>
-    <p>Local UPnP Things is an independent local-network app. It is not affiliated with or endorsed by device manufacturers, Apple, Google, or standards organizations.</p>
+    <p>Local UPnP Things is independent software. It is not affiliated with or endorsed by Belkin, Wemo, Apple, Google or standards organizations.</p>
 
     <h2>Changes</h2>
-    <p>This policy may be updated when the app's behavior or third-party services change. The effective date at the top of this page will be updated when changes are made.</p>
+    <p>This policy may be updated when the app's behavior or third-party services change. The effective date above will be updated when changes are made.</p>
   </main>
 </body>
 </html>
