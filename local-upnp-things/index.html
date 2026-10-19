@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Local UPnP Things</title>
+  <title>Smart Home Status</title>
   <style>
     body {
       color: #1f2328;
@@ -41,22 +41,26 @@
 </head>
 <body>
   <main>
-    <h1>Local UPnP Things</h1>
-    <p>Local UPnP Things is a local Wi-Fi/LAN controller for compatible local UPnP/SOAP Things.</p>
+    <h1>Smart Home Status</h1>
+    <p>Smart Home Status checks supported accessories already in Apple Home against your chosen On/Off goals. Review selected changes and read fresh responses after applying them.</p>
+    <p>This is the owner-selected release name for the iOS app previously called Local UPnP Things. Existing support and privacy URLs remain valid.</p>
 
-    <h2>Local-first behavior</h2>
+    <h2>Apple Home checks and optional local tools</h2>
     <ul>
-      <li>Find compatible Things on the same Wi-Fi/LAN.</li>
-      <li>Read local device descriptions and save known Things on device.</li>
-      <li>Refresh state and control compatible local on/off services when available.</li>
-      <li>No cloud account is required.</li>
+      <li>Create on-device power checklists for supported lights, plugs and switches.</li>
+      <li>Check current responses, select changes, review and Apply, then confirm new responses.</li>
+      <li>Use compatible HAP/HomeKit and Matter accessories already in Apple Home through Apple's HomeKit API. No independent Matter pairing is included.</li>
+      <li>Home reads are available on iOS 17; reviewed Home power changes require iOS 18 or later.</li>
+      <li>Home permission is optional. Local UPnP/SOAP tools remain available for compatible devices on the same Wi-Fi/LAN, including selected legacy Wemo models.</li>
+      <li>No developer-operated cloud account is required. No Home data is supplied as advertising context. Local tools may show consent-gated AdMob ads.</li>
     </ul>
+    <p>Checks describe responses at the time of a check, not continuous monitoring, physical power measurement or a home-safety guarantee. Compatibility depends on exposed services and characteristics.</p>
 
     <h2>Privacy</h2>
     <p><a href="/local-upnp-things-privacy/">Privacy Policy</a></p>
 
     <h2>Support</h2>
-    <p>Support is handled through App Store reviews, TestFlight feedback, and official app review channels.</p>
+    <p>For support, contact <a href="mailto:meonmesh@gmail.com">meonmesh@gmail.com</a>. Do not send accessory setup codes, passwords or private household identifiers.</p>
   </main>
 </body>
 </html>

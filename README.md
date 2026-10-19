@@ -25,3 +25,17 @@ Things. No Android policy, other app page or app-ads.txt change is included.
 Validation: HTML/link/required-content checks and independent factual review;
 public HTTP/content verification is recorded after the Pages deployment. This
 policy update is not an App Store submission or a claim of ad-serving approval.
+
+## Smart Home Status naming update — October 19, 2026
+
+Harry selected Smart Home Status as the iOS app's public release name. Updated
+only its support/policy branding and its root app-directory label. Existing URL
+paths and app-ads.txt are preserved. The support page now describes optional
+Apple Home checks, compatible HAP/Matter via HomeKit, reviewed power changes on
+iOS 18+, local tools and the existing public support email. The policy explains
+the former Local UPnP Things name without changing the app's installation identity.
+
+Checks: static HTML structure/link validation and source-scope review. Publication
+and canonical HTTP verification are recorded in the app repository's README.
+This does not reserve an App Store name, change store/account records or claim
+trademark clearance, store approval or live ad serving.
