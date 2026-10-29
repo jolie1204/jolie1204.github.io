@@ -153,3 +153,41 @@ mobile, and dark screenshots were inspected; the screenshot galleries now render
 correctly. Temporary QA dependencies and browser reports remain outside the Git
 checkout. Static checks were repeated after the larger screenshot and stylesheet
 changes and passed; `git diff --check` passed.
+
+### Publication closeout — October 29, 2026, 10:08 PDT
+
+- Website source: `03652353e59017498746eb64c5cac5545d5810d7` (detail-page milestone),
+  preceded by homepage `97492ed2cdc44ab5e6d50bb219433c3e0f4e1ab7`.
+  Both commits were confirmed pushed to `origin/main`; the existing Pages
+  publishing configuration remains `main`, repository root, public HTTPS.
+- GitHub Pages reported `built` for `0365235` at **10:07:41 PDT / 17:07:41 UTC**.
+  The check made while it was still building correctly saw the prior site;
+  that intermediate report is retained separately and is not the final status.
+- At **10:08:09 PDT / 17:08:09 UTC**, independent HTTPS checks passed for
+  **45 canonical public endpoints**: homepage, every existing app/support and
+  privacy route, all app icons and screenshots, stylesheet, favicon, social
+  preview, and `app-ads.txt`. All returned HTTP 200. All 44 files owned by this
+  checkout matched the local published source byte-for-byte; Wemo’s separate
+  privacy project returned 200 and was not edited.
+- Four additional **Ubuntu Chromium public-site checks** passed: homepage and
+  Glass Skin detail at 375/1440px. The final versioned stylesheet was present,
+  every image loaded, and neither page overflowed horizontally. Together with
+  the 30 local browser cases, this resolves the earlier preview image-loading
+  uncertainty. Claude reviews and earlier Mac checks are described above;
+  final verification and deployment closeout used Ubuntu only.
+- Shared seller-file SHA-256 remains
+  `1924020676c7f4cb241b2b80f247d8edbf09b1fd128d722d939a3388d9ef175a`.
+  Existing privacy document contents and extra prototype/app routes are
+  unchanged. This website work makes no app-release, privacy-compliance,
+  AdMob-readiness, traffic, download, or revenue claim.
+- Evidence and QA scripts are retained privately outside Git under
+  `~/.local/state/meonmesh-website/2026-10-29/`, including public HTTP hashes,
+  Ubuntu browser results/screenshots, public store source responses, and earlier
+  preview evidence. Browser UI captures were not published. Temporary QA
+  dependencies are outside the checkout; no unrelated workspace content or
+  app repository was changed. No worktree or branch was removed.
+- Requested homepage, detail-page, support consistency, metadata and responsive
+  improvements are complete. Limits: no full screen-reader/physical-phone audit,
+  additional browser-engine matrix, or new language localization was performed;
+  email applications were not launched during QA. Later documentation-only
+  commits do not change the exact website-source reference above.
