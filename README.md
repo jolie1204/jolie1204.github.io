@@ -55,3 +55,40 @@ after Pages deployment. This policy change does not submit or release the app.
 Follow-up: ad privacy choices/retry controls live in Settings → Advertising so
 the footer has exactly one banner row. Verified the HTML and required settings
 route; no URL, ad configuration or data-processing claim changed.
+
+## Website improvement — October 29, 2026 (PDT)
+
+### Milestone 1: homepage and app discovery
+
+Replaced the text-only directory with an introductory hero, six app cards,
+existing app icons, verified store links, and a common contact section. Added
+responsive light/dark styling, a keyboard skip link and visible focus states,
+app-specific accessible link names, canonical/description/Open Graph metadata,
+a favicon, and a locally hosted social preview. No analytics or third-party
+runtime scripts were added. Existing support/privacy routes and the exact shared
+`app-ads.txt` are preserved. Wemo's privacy route is a separate existing GitHub
+Pages project; it returned HTTP 200 on October 29.
+
+Sources: public US Apple lookup confirmed IDs 6777523967 (Sudoku Clear),
+6776738947 (GridCage), 6775093220 (Glass Skin Routine), 6775299150 (Countdown),
+and 6777620569 (Smart Home Status), including their icons and public store URLs.
+Google Play public Open Graph titles also confirmed Sudoku Clear
+`com.meonmesh.sudoku`, GridCage `com.meonmesh.gridcage`, Glass Skin Routine
+`com.glassskinroutine`, and Countdown `com.appfoundry.countdown_cabinet`;
+these Android download links are included. Wemo's existing Google Play package `com.meonmesh.lot.wemocontroller` was
+confirmed by the public listing's Open Graph title/description. Its icon is a
+resized copy of the existing app's production Play icon. Icons are optimized
+192px WebP copies; the source app projects were not edited. Glass Skin Routine's
+homepage copy reflects the current public guide/Shelf scope, replacing obsolete
+routine/streak claims on the old support page in the next milestone.
+
+Validation so far: parsed the homepage; checked local navigation/asset targets,
+its single H1, unchanged seller-file bytes, and `git diff --check`. Claude completed a read-only accessibility/content review; its small-link,
+header wrapping, theme-color, and navigation-arrow findings were addressed. Mac
+Codex used the computer-use skill with native node_repl/@oai/sky in a new Chrome
+tab: all six cards render in the desktop grid and stack at 400px; the collection
+anchor and local app pages work. The local preview cannot serve Wemo’s separate
+privacy project, so its link uses the canonical absolute URL (public HTTP 200).
+Full visual review results and live deployment checks follow below. Subsequent work: refresh the six linked app pages with actual
+public screenshots, current descriptions, downloads, and consistent support;
+then verify the public deployment and all preserved policy routes.
