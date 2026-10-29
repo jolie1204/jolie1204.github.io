@@ -1,6 +1,7 @@
 # jolie1204.github.io
 
-Root GitHub Pages site for app privacy policies and app-ads.txt verification.
+MeOnMesh’s GitHub Pages developer website: app discovery, verified downloads,
+app-specific support, privacy policies, and the shared app-ads.txt seller file.
 
 Published files:
 
@@ -92,3 +93,63 @@ privacy project, so its link uses the canonical absolute URL (public HTTP 200).
 Full visual review results and live deployment checks follow below. Subsequent work: refresh the six linked app pages with actual
 public screenshots, current descriptions, downloads, and consistent support;
 then verify the public deployment and all preserved policy routes.
+
+Milestone 1 publication confirmed: GitHub Pages reported `built` for source
+`97492ed2cdc44ab5e6d50bb219433c3e0f4e1ab7` at 2026-10-29 09:59:23 PDT
+(16:59:23 UTC), and an independent canonical HTTPS GET returned the new
+collection content. Commit `97492ed` was pushed to `origin/main` successfully.
+The Mac visual review covered desktop and 375×630 responsive layout; it did not
+open external stores or email. Follow-up fixes enlarged secondary links,
+categories and footer text. Browser screenshots are kept privately, outside Git.
+
+### Milestone 2: app detail pages and consistent support
+
+Refreshed the existing six featured app pages with shared styling, real public
+store screenshots (three per app), download links, a return-to-collection link,
+and clearly labeled support/privacy information. No prototype was promoted to a
+released app; ReadyZoom and Fairway Caddie AI pages remain unchanged. The site
+continues in its existing English language. No new contact service, account,
+analytics, form, or application/store release was introduced.
+
+Sudoku and GridCage descriptions now reflect public Levels/Free play behavior.
+Glass Skin Routine now describes the current guide/product-type/layer-order and
+local Shelf features, with its cosmetic-education limits. Countdown describes
+current widgets, reminders and local backup. Smart Home’s compatibility,
+HomeKit/Matter, iOS-version and snapshot-only limits, and Wemo’s existing FAQ,
+reset warning, compatibility, support channel and affiliation disclaimer were
+preserved. Wemo’s existing search-oriented page title was retained.
+
+Screenshot source URLs/dimensions are recorded in
+`assets/screenshots/sources.json`. Apple’s default small lookup thumbnails were
+replaced with larger versions from the same public CDN originals after Claude’s
+read-only review caught softness and the inaccurate enlargement hint. Final
+Apple screenshots are 520×1130; Wemo screenshots are 520×925. All are served
+locally, lazily loaded and have intrinsic dimensions and descriptive alt text.
+The source app repositories and original store assets were not changed.
+
+Verification before publication: seven changed HTML pages and 174 references
+parsed/checked; local files and fragment targets resolve; every page has one H1;
+all images have alt/width/height; WebP files decode. All existing policy files
+and `app-ads.txt` are byte-identical to the fetched baseline. Claude independently
+reviewed the six detail pages and confirmed preservation of Smart Home caveats
+and Wemo FAQ/support. Store identities were checked against the public listings,
+not inferred from local package names alone. Stylesheet URLs include a version
+query to avoid stale shared styles after this deployment.
+
+The first Mac detail-page attempt saw missing lazy images and then Sky
+`cgWindowNotFound` errors. The short-lived SSH tunnel was subsequently confirmed
+closed; a separate persistent tunnel restored remote image HTTP 200. A bounded
+follow-up visual check and final public HTTP checks are recorded below. No full
+screen-reader audit, physical-phone run or full browser matrix is claimed.
+
+Final pre-publication verification moved to Ubuntu at Harry’s explicit request;
+no further Mac work was performed. Native Mac Sky remained unavailable, so the
+follow-up did not establish image rendering. Ubuntu Playwright/Chromium then
+passed **30 browser checks**: all seven changed pages at 320, 375, 768 and 1440px,
+plus homepage/Glass Skin at 375px in dark mode. All images completed with positive
+natural dimensions, no page-level horizontal overflow or JavaScript page errors
+occurred, and the dark backgrounds matched the intended theme. Actual desktop,
+mobile, and dark screenshots were inspected; the screenshot galleries now render
+correctly. Temporary QA dependencies and browser reports remain outside the Git
+checkout. Static checks were repeated after the larger screenshot and stylesheet
+changes and passed; `git diff --check` passed.
