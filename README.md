@@ -191,3 +191,25 @@ changes and passed; `git diff --check` passed.
   additional browser-engine matrix, or new language localization was performed;
   email applications were not launched during QA. Later documentation-only
   commits do not change the exact website-source reference above.
+
+## Homepage hero exploration — November 2, 2026
+
+Prepared two Impeccable-guided hero-only proposals on working branch
+`design/hero-first-pass-20261102`, based on fetched `main` commit `b9c8fca`.
+Recent Smart Home Status content/privacy work is preserved. Review
+[the local A/B comparison](design/hero-first-pass/compare.html) and
+[scope, findings and verification](design/hero-first-pass/README.md).
+
+A pairs text with two labeled app-screen excerpts; B shows three larger activity
+scenes with a native mobile scroll strip. Both inherit the existing visual
+system and keep every surrounding section and destination. Claude independently
+reviewed the incumbent layout; the local Impeccable detector was run before and
+after. Final findings are inherited lower-page issues, documented rather than
+silently ignored. Twenty variant and five comparison-page Ubuntu browser cases
+passed, together with file/anchor, source-preservation, and diff checks.
+
+This milestone is **local design preparation**, not public publication. The
+production homepage, shared CSS, app pages, privacy files and seller file are
+unchanged. The next step is Harry's A/B choice, followed by applying only the
+selected hero to the then-current homepage. No whole-site rebrand or store work
+is included.

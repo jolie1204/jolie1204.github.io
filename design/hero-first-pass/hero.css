@@ -1,0 +1,152 @@
+/* Hero-only layout proposals. Incumbent colors, typefaces and all lower sections are inherited. */
+.hero--paired, .hero--gallery {
+  padding-block: 56px 64px;
+}
+.hero--paired h1, .hero--gallery h1 {
+  font-size: clamp(44px, 5vw, 68px);
+  letter-spacing: -0.035em;
+  line-height: 1.07;
+  margin: 0 0 24px;
+  text-wrap: balance;
+}
+.hero-message { min-width: 0; }
+.hero-intro {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 42ch;
+  margin-bottom: 26px;
+}
+.hero-message .button { gap: 24px; }
+.hero--paired {
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  gap: 48px;
+  align-items: center;
+}
+.paired-scenes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding-block: 8px;
+}
+.app-scene {
+  display: block;
+  min-width: 0;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.app-scene figure { margin: 0; }
+.app-scene:hover { text-decoration: none; }
+.scene-image {
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--soft);
+}
+.scene-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.app-scene figcaption {
+  position: relative;
+  padding-block: 14px 8px;
+  padding-right: 22px;
+  line-height: 1.45;
+}
+.app-scene figcaption strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 650;
+}
+.app-scene figcaption span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.app-scene figcaption svg {
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+.app-scene:hover figcaption strong { text-decoration: underline; text-underline-offset: 4px; }
+.app-scene:focus-visible { outline-offset: 7px; }
+.hero--paired .scene-image { max-height: 420px; }
+.hero--paired .app-scene--dates { padding-top: 40px; }
+.hero--gallery { display: block; }
+.hero--gallery .hero-message {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: 0 56px;
+  margin-bottom: 34px;
+  align-items: start;
+}
+.hero--gallery h1 { grid-row: 1 / 3; margin-bottom: 0; }
+.hero--gallery .hero-intro { margin-block: 7px 18px; }
+.hero--gallery .button { justify-self: start; }
+.day-scenes {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 4px 8px;
+}
+.hero--gallery .scene-image { height: 238px; }
+.hero--gallery .scene-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero--gallery .app-scene--puzzle img { object-position: 50% 43%; }
+.hero--gallery .app-scene--dates img { object-position: 50% 34%; }
+.hero--gallery .app-scene--guide img { object-position: 50% 47%; }
+.hero--gallery .scene-image img { transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1); }
+@media (hover: hover) {
+  .hero--gallery .app-scene:hover .scene-image img { transform: scale(1.025); }
+}
+.day-scenes:focus-visible { outline: 3px solid var(--focus); outline-offset: 8px; border-radius: 4px; }
+.swipe-hint { display: none; }
+.hero--paired ::selection, .hero--gallery ::selection { background: var(--accent); color: var(--bg); }
+@media (max-width: 1000px) {
+  .hero--paired { gap: 32px; }
+  .paired-scenes { gap: 14px; }
+  .hero--paired .scene-image { max-height: 380px; }
+  .hero--gallery .hero-message { gap: 0 30px; }
+  .day-scenes { gap: 18px; }
+  .hero--gallery .scene-image { height: 210px; }
+}
+@media (max-width: 760px) {
+  .hero--paired, .hero--gallery { padding-block: 40px 48px; }
+  .hero--paired { grid-template-columns: 1fr; gap: 30px; }
+  .hero--paired h1, .hero--gallery h1 { font-size: clamp(42px, 8vw, 62px); }
+  .hero--paired .hero-intro { max-width: 46ch; }
+  .hero--paired .hero-intro br, .hero--gallery .hero-intro br { display: none; }
+  .paired-scenes { max-width: 480px; width: 100%; justify-self: center; gap: 20px; }
+  .hero--paired .scene-image { max-height: 340px; }
+  .hero--paired .app-scene--dates { padding-top: 26px; }
+  .hero--gallery .hero-message { display: block; margin-bottom: 28px; }
+  .hero--gallery h1 { margin-bottom: 20px; }
+  .hero--gallery .hero-intro { margin-block: 0 22px; max-width: 44ch; }
+  .day-scenes {
+    grid-auto-columns: minmax(230px, 80%);
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    scrollbar-color: var(--accent) var(--soft);
+    scrollbar-width: thin;
+    padding-bottom: 14px;
+  }
+  .day-scenes .app-scene { scroll-snap-align: start; }
+  .hero--gallery .scene-image { height: 226px; }
+  .swipe-hint { display: block; font-size: 12px; color: var(--muted); margin: 10px 0 0; }
+}
+@media (max-width: 400px) {
+  .hero--paired h1, .hero--gallery h1 { font-size: 42px; }
+  .paired-scenes { gap: 14px; }
+  .hero--paired .scene-image { max-height: 280px; }
+  .app-scene figcaption strong { font-size: 13px; }
+  .app-scene figcaption span { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero--gallery .scene-image img { transition: none; }
+}
