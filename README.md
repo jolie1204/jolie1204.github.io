@@ -228,4 +228,35 @@ Verification before publication, entirely on Ubuntu:
   outside Git at `~/.local/state/meonmesh-website/2026-11-02-hero-publication/`.
   Limits: Chromium viewport emulation only; no full screen-reader, physical-phone
   or additional browser-engine audit. No store/account or advertising setup was
-  changed. Publication evidence is recorded below after deployment.
+  changed. Publication evidence is recorded below.
+
+### A hero publication closeout — November 2, 2026, 15:11 PST
+
+- Exact deployed website source: `4d5abd25b716dd53f6cedbe1b68cac120304601b`,
+  confirmed pushed to `origin/main`. Pages uses the existing `main`/root public
+  HTTPS configuration and reported **built** at **15:11:08 PST / 23:11:08 UTC**.
+- Independent canonical HTTPS checks completed at **15:11:28 PST / 23:11:28 UTC**:
+  **46 endpoints returned 200**. All 45 checkout-owned public files matched the
+  source byte-for-byte; Wemo's separate privacy project returned 200. This covers
+  every existing app/support/privacy page, all published images, both stylesheets,
+  and the shared seller file.
+- Three additional public-site Ubuntu Chromium cases passed by **15:11:29 PST /
+  23:11:29 UTC**: desktop light, mobile light and mobile dark. The selected hero,
+  versioned CSS and images render; no page overflow or browser errors, and the
+  collection CTA works. The public mobile capture was also visually inspected.
+- Published SHA-256: `index.html`
+  `5c5ef3f09f02811f7529194cf4045dc8d47f82b25ade057e9a79bd111c581562`;
+  `assets/hero.css`
+  `bca2828433d64cb6a425b22d58a472a7545559914a4ba8a77d612724a97aa936`.
+  Seller file remains
+  `1924020676c7f4cb241b2b80f247d8edbf09b1fd128d722d939a3388d9ef175a`.
+- Build response, per-file HTTP hashes, final browser reports/captures and review
+  evidence are retained at the private evidence location above. The two temporary
+  preview servers were stopped. The checkout contains one `main` worktree; no QA
+  outputs/dependencies were added to it. The original design branch remains
+  available locally and remotely; no branch, worktree or unique artifact was
+  deleted. No application repository was changed.
+- The selected hero implementation and public deployment are complete. The
+  inherited lower-page detector findings and browser/accessibility audit limits
+  above remain documented. A later documentation-only closeout commit preserves
+  the exact deployed-source reference above.
