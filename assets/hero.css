@@ -1,0 +1,103 @@
+/* Approved paired-screen homepage hero. Uses the existing site palette and type. */
+.hero--paired {
+  padding-block: 56px 64px;
+  grid-template-columns: minmax(0, 0.94fr) minmax(0, 1.06fr);
+  gap: 48px;
+  align-items: center;
+}
+.hero--paired h1 {
+  font-size: clamp(44px, 5vw, 68px);
+  letter-spacing: -0.035em;
+  line-height: 1.07;
+  margin: 0 0 24px;
+  text-wrap: balance;
+}
+.hero--paired .hero-message { min-width: 0; }
+.hero--paired .hero-intro {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 42ch;
+  margin-bottom: 26px;
+}
+.hero--paired .hero-message .button { gap: 24px; }
+.hero--paired .paired-scenes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding-block: 8px;
+}
+.hero--paired .app-scene {
+  display: block;
+  min-width: 0;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.hero--paired .app-scene figure { margin: 0; }
+.hero--paired .app-scene:hover { text-decoration: none; }
+.hero--paired .scene-image {
+  overflow: hidden;
+  max-height: 420px;
+  border-radius: 12px;
+  background: var(--soft);
+}
+.hero--paired .scene-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero--paired .app-scene figcaption {
+  position: relative;
+  padding-block: 14px 8px;
+  padding-right: 22px;
+  line-height: 1.45;
+}
+.hero--paired .app-scene figcaption strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 650;
+}
+.hero--paired .app-scene figcaption span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.hero--paired .app-scene figcaption svg {
+  position: absolute;
+  right: 0;
+  top: 16px;
+}
+.hero--paired .app-scene:hover figcaption strong {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.hero--paired .app-scene:focus-visible { outline-offset: 7px; }
+.hero--paired .app-scene--dates { padding-top: 40px; }
+.hero--paired ::selection { background: var(--accent); color: var(--bg); }
+@media (max-width: 1000px) {
+  .hero--paired { gap: 32px; }
+  .hero--paired .paired-scenes { gap: 14px; }
+  .hero--paired .scene-image { max-height: 380px; }
+}
+@media (max-width: 760px) {
+  .hero--paired { padding-block: 40px 48px; grid-template-columns: 1fr; gap: 30px; }
+  .hero--paired h1 { font-size: clamp(42px, 8vw, 62px); }
+  .hero--paired .hero-intro { max-width: 46ch; }
+  .hero--paired .hero-intro br { display: none; }
+  .hero--paired .paired-scenes {
+    max-width: 480px;
+    width: 100%;
+    justify-self: center;
+    gap: 20px;
+  }
+  .hero--paired .scene-image { max-height: 340px; }
+  .hero--paired .app-scene--dates { padding-top: 26px; }
+}
+@media (max-width: 400px) {
+  .hero--paired h1 { font-size: 42px; }
+  .hero--paired .paired-scenes { gap: 14px; }
+  .hero--paired .scene-image { max-height: 280px; }
+  .hero--paired .app-scene figcaption strong { font-size: 13px; }
+  .hero--paired .app-scene figcaption span { font-size: 12px; }
+}

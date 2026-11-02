@@ -191,3 +191,41 @@ changes and passed; `git diff --check` passed.
   additional browser-engine matrix, or new language localization was performed;
   email applications were not launched during QA. Later documentation-only
   commits do not change the exact website-source reference above.
+
+## Selected homepage hero A — November 2, 2026 (PST)
+
+Harry selected proposal A from the Impeccable-guided hero exploration. Applied
+only that hero to the latest publishing branch, based on `b9c8fca`; the original
+[A/B exploration remains on its design branch](https://github.com/jolie1204/jolie1204.github.io/tree/c828e78/design/hero-first-pass).
+The headline and two labeled, linked excerpts from Sudoku Clear and Countdown
+Cabinet now introduce the collection. Existing colors/type are inherited, and
+mobile keeps both apps visible side by side. A homepage-only, versioned
+`assets/hero.css` isolates the new styles; the shared stylesheet is unchanged.
+
+Claude independently reviewed the source, destinations, preview metadata and
+scope. Added its suggested semantic group role, and corrected the space between
+sentences when the mobile line break is hidden. The approved composition is
+preserved. No preview title, noindex directive, B layout, comparison page or QA
+capture is included in production. The design branch/history remains intact.
+
+Verification before publication, entirely on Ubuntu:
+
+- Ten final Chromium cases: 320, 375, 768, 1024 and 1440px in light/dark themes.
+  Hero geometry and computed styles match approved A at every size; surrounding
+  sections match the original homepage. All images load; no horizontal overflow,
+  browser page errors or failed local responses; one H1, visible focus, working
+  collection CTA and both app links. Hero secondary-text contrast exceeds 4.5:1.
+  Desktop/mobile and mobile dark captures were visually inspected.
+- Static checks: homepage content outside the hero and its new stylesheet link
+  is byte-identical; 50 homepage references checked. All other pre-existing
+  production files, including latest Smart Home content, policies, shared CSS
+  and seller file, are unchanged. `git diff --check` passes.
+- Impeccable's final detector finds no hero issue. Eight inherited lower-page
+  findings remain outside this selected scope: six card-link wrapper padding
+  warnings (their child links have centered text in 44px targets), plus the
+  collection/contact eyebrow labels. No detector rules were suppressed.
+- Evidence, scripts, baseline copies and Claude's review are stored privately
+  outside Git at `~/.local/state/meonmesh-website/2026-11-02-hero-publication/`.
+  Limits: Chromium viewport emulation only; no full screen-reader, physical-phone
+  or additional browser-engine audit. No store/account or advertising setup was
+  changed. Publication evidence is recorded below after deployment.
