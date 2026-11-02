@@ -3,7 +3,9 @@
 This is a **hero-only comparison**, not a replacement visual identity or a
 production deployment. Start with [compare.html](compare.html); it works from
 local disk and from a static HTTP server. Both pages include the existing lower
-homepage for context. The public homepage stays on the existing `main` branch.
+homepage for context. Relative assets work from disk; app/support/privacy links
+use their existing canonical HTTPS destinations, and collection/contact anchors
+stay inside the preview. The public homepage stays on the existing `main` branch.
 
 ## Brief and spatial thesis
 
@@ -63,6 +65,8 @@ clean whole-page detector result is claimed.
   embedded in the unchanged app screenshots or the whole site's accessibility.
 - Mobile B's gallery scrolls with the keyboard. Lower `#apps` font, color,
   padding, width, and grid computed values match the original at every viewport.
+- Two additional direct-file Chromium checks passed for A/B at 375px: all
+  images load from disk, app links use canonical HTTPS, and the CTA stays local.
 - Five additional comparison-page cases: 320/375/768/1440px in light and 375px in
   dark. Images and all local preview links load; the page does not overflow.
 - Source hashes prove that every pre-existing production file is unchanged

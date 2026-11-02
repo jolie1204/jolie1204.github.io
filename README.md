@@ -206,7 +206,8 @@ system and keep every surrounding section and destination. Claude independently
 reviewed the incumbent layout; the local Impeccable detector was run before and
 after. Final findings are inherited lower-page issues, documented rather than
 silently ignored. Twenty variant and five comparison-page Ubuntu browser cases
-passed, together with file/anchor, source-preservation, and diff checks.
+passed, together with two direct-file checks, file/anchor, source-preservation,
+and diff checks. Canonical app links also work when the previews open from disk.
 
 This milestone is **local design preparation**, not public publication. The
 production homepage, shared CSS, app pages, privacy files and seller file are
