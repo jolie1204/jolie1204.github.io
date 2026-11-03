@@ -319,3 +319,35 @@ Verification before publication, on Ubuntu:
   claimed. Existing app facts were preserved, not re-audited against new releases.
 
 Publication evidence is recorded below.
+
+### Detail-page publication closeout — November 2, 2026, 16:11 PST
+
+- Exact deployed website source: `cba2c59ebda394862ef9de046c87df7d3ad6564a`,
+  confirmed pushed to `origin/main`. GitHub Pages reported **built** at
+  **November 2, 16:10:54 PST / November 3, 00:10:54 UTC**. The existing `main`/root
+  publishing configuration is unchanged.
+- Canonical HTTPS checks completed at **16:11:22 PST / 00:11:22 UTC**: **48
+  endpoints returned 200**. All 47 checked repository-owned HTML, CSS, JavaScript,
+  image and seller files match the deployed source byte-for-byte. Wemo's separate
+  privacy project also returned 200. Full per-file SHA-256 values and URLs are
+  retained in `public-http.json` at the evidence location above.
+- **13 public-site Ubuntu Chromium cases** passed by **16:11:28 PST / 00:11:28
+  UTC**: all six app pages at 375/1440px, plus Smart Home Status in mobile dark
+  mode. The new CSS/script and images load, no horizontal overflow or browser
+  errors occur, screenshot expansion/next/Escape work, and each header's Support
+  link reaches its own support section. Public screenshots were retained and the
+  Smart Home mobile dark render was visually inspected.
+- Published asset SHA-256: `assets/details.css`
+  `0fd1ae86e2980e7b3492e1248c96094bbf395e16da85217fb003a4e3a71ca1fb`;
+  `assets/details.js`
+  `a7136396b1d2a53c9040160aaf8f35745aef14a9ec565219069e2fd26ad40f7d`.
+  Seller SHA-256 remains
+  `1924020676c7f4cb241b2b80f247d8edbf09b1fd128d722d939a3388d9ef175a`.
+- Evidence, QA scripts, baseline archive and Claude reports remain private,
+  outside Git. The task's local preview server was stopped. One existing `main`
+  worktree remains, with no QA artifacts/dependencies in the checkout; the earlier
+  hero design branch and all unique history are preserved. No app repository,
+  privacy policy, ad configuration or store release was changed.
+- The six-page detail improvement and public deployment are complete. The stated
+  browser/device audit limits still apply. Later documentation-only commits do
+  not change the exact deployed-source reference above.
