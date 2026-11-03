@@ -20,33 +20,45 @@
 <meta property="og:image:alt" content="MeOnMesh — small apps for everyday life">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/site.css?v=20261029-2">
+<link rel="stylesheet" href="/assets/details.css?v=20261102-1">
+<script src="/assets/details.js?v=20261102-1" defer></script>
 </head>
-<body>
+<body class="app-detail-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap">
 <a class="brand" href="/" aria-label="MeOnMesh home"><span class="brand-mark" aria-hidden="true">m<span>·</span></span><span>MeOnMesh</span></a>
 <nav aria-label="Main navigation">
-<a href="/#apps">Our apps</a><a href="/#support">Get in touch <span aria-hidden="true">↓</span></a>
+<a href="/#apps">Our apps</a><a href="#app-support">Support</a>
 </nav>
 </header>
 <main id="main" class="detail-main wrap">
 <a class="back-link" href="/#apps">← All apps</a>
+<div class="detail-hero">
 <section class="detail-intro" aria-labelledby="app-title">
+<div class="app-identity">
 <img class="detail-icon" src="/assets/apps/sudoku-clear.webp" width="96" height="96" alt="">
-<div>
-<p class="eyebrow">PUZZLES</p><h1 id="app-title">Sudoku Clear</h1><p class="detail-tagline">A little focus, one square at a time.</p><p class="detail-description">Classic Sudoku with numbered levels, free play, and the tools to think through your next move.</p>
+<div><h1 id="app-title">Sudoku Clear</h1><p class="detail-meta">Puzzles <span aria-hidden="true">·</span> iPhone &amp; Android</p></div>
+</div>
+<p class="detail-tagline">A little focus, one square at a time.</p>
+<p class="detail-description">Classic Sudoku with numbered levels, free play, and the tools to think through your next move.</p>
 <div class="store-links">
-<a class="store-link" href="https://apps.apple.com/us/app/sudoku-clear/id6777523967" aria-label="Sudoku Clear on App Store">App Store <span aria-hidden="true">↗</span></a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.meonmesh.sudoku" aria-label="Sudoku Clear on Google Play">Google Play <span aria-hidden="true">↗</span></a>
+<a class="store-link download-link" href="https://apps.apple.com/us/app/sudoku-clear/id6777523967" aria-label="Sudoku Clear on App Store">App Store <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="store-link download-link" href="https://play.google.com/store/apps/details?id=com.meonmesh.sudoku" aria-label="Sudoku Clear on Google Play">Google Play <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
-</div>
+<nav class="detail-nav" aria-label="On this page">
+<a href="#screenshots">Screenshots</a><a href="#overview">About</a><a href="#app-support">Support &amp; privacy</a>
+</nav>
 </section>
-<section class="screenshot-section" aria-labelledby="screenshots-title">
-<div class="section-heading">
-<h2 id="screenshots-title">A closer look.</h2><p>Screenshots from the iPhone App Store listing.</p>
+<section id="screenshots" class="screenshot-section" aria-labelledby="screenshots-title" tabindex="-1">
+<div class="gallery-heading">
+<div><h2 id="screenshots-title">A closer look.</h2><p>Screenshots from the iPhone App Store listing.</p></div>
+<div class="gallery-controls" role="group" aria-label="Screenshot gallery controls" hidden>
+<button class="gallery-control" type="button" data-scroll="-1" aria-label="Previous screenshots"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+<button class="gallery-control" type="button" data-scroll="1" aria-label="Next screenshots"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</div>
 </div>
 <div class="screenshot-gallery" tabindex="0" role="region" aria-label="Sudoku Clear screenshots; scroll horizontally for more">
 <figure>
-<a href="/assets/screenshots/sudoku-clear-1.webp" aria-label="View Sudoku Clear screenshot: Numbered levels"><img src="/assets/screenshots/sudoku-clear-1.webp" alt="Sudoku Clear: Numbered levels" width="520" height="1130" loading="lazy"></a><figcaption>Numbered levels</figcaption>
+<a href="/assets/screenshots/sudoku-clear-1.webp" aria-label="View Sudoku Clear screenshot: Numbered levels"><img src="/assets/screenshots/sudoku-clear-1.webp" alt="Sudoku Clear: Numbered levels" width="520" height="1130" loading="eager" fetchpriority="high"></a><figcaption>Numbered levels</figcaption>
 </figure>
 <figure>
 <a href="/assets/screenshots/sudoku-clear-2.webp" aria-label="View Sudoku Clear screenshot: A classic Sudoku puzzle"><img src="/assets/screenshots/sudoku-clear-2.webp" alt="Sudoku Clear: A classic Sudoku puzzle" width="520" height="1130" loading="lazy"></a><figcaption>A classic Sudoku puzzle</figcaption>
@@ -55,17 +67,18 @@
 <a href="/assets/screenshots/sudoku-clear-3.webp" aria-label="View Sudoku Clear screenshot: Pencil notes while solving"><img src="/assets/screenshots/sudoku-clear-3.webp" alt="Sudoku Clear: Pencil notes while solving" width="520" height="1130" loading="lazy"></a><figcaption>Pencil notes while solving</figcaption>
 </figure>
 </div>
-<p class="gallery-hint">Scroll to explore. Select a screenshot to see it larger.</p>
+<p class="gallery-hint">Select a screenshot to see it larger.</p>
 </section>
+</div>
 <div class="detail-columns">
-<section class="detail-overview" aria-label="About Sudoku Clear">
+<section id="overview" tabindex="-1" class="detail-overview" aria-label="About Sudoku Clear">
 <h2>Made for the way you use it.</h2><h3>Find your next level</h3><p>Work through numbered levels, replay completed puzzles, or choose Easy, Medium, or Hard in Free play.</p><h3>Keep your train of thought</h3><p>Use pencil notes, row and column guides, Erase, Undo, and Redo. Tune mistake highlighting, sounds, and haptics.</p><h3>Pick up where you left off</h3><p>Levels and Free play keep separate saved games on this device. No account or cloud sync is required.</p>
 <section class="detail-note">
 <h2>Good to know</h2><p>No account is required. Progress is saved on this device, without cloud sync. The app includes banner advertising; there are no full-screen ads during puzzles.</p>
 </section>
 </section>
-<aside class="detail-support" aria-labelledby="help-title">
-<p class="eyebrow">HERE TO HELP</p><h2 id="help-title">Need a hand?</h2><p>For help, email us with the app name, your device model, and what you were trying to do.</p><p><a href="mailto:meonmesh@gmail.com?subject=Sudoku%20Clear%20support">meonmesh@gmail.com</a></p><p class="support-hint">Please don’t send passwords, setup codes, or private device details.</p><hr><h3>Your privacy</h3><p>Read this app’s data use, advertising details, and privacy choices.</p><a href="/sudoku-clear-privacy/">Sudoku Clear privacy policy →</a>
+<aside id="app-support" tabindex="-1" class="detail-support" aria-labelledby="help-title">
+<h2 id="help-title">Need a hand?</h2><p>For help, email us with the app name, your device model, and what you were trying to do.</p><p><a href="mailto:meonmesh@gmail.com?subject=Sudoku%20Clear%20support">meonmesh@gmail.com</a></p><p class="support-hint">Please don’t send passwords, setup codes, or private device details.</p><hr><h3>Your privacy</h3><p>Read this app’s data use, advertising details, and privacy choices.</p><a href="/sudoku-clear-privacy/">Sudoku Clear privacy policy →</a>
 </aside>
 </div>
 </main>

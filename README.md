@@ -260,3 +260,62 @@ Verification before publication, entirely on Ubuntu:
   inherited lower-page detector findings and browser/accessibility audit limits
   above remain documented. A later documentation-only closeout commit preserves
   the exact deployed-source reference above.
+
+## App detail usability — November 2, 2026 (PST)
+
+Improved the six app detail pages linked from the homepage: Sudoku Clear,
+GridCage Sudoku, Glass Skin Routine, Countdown Cabinet, Smart Home Status and
+Wemo Controller. This builds on `304737b` and retains the approved homepage A
+and the existing cream/green palette and typefaces. ReadyZoom and Fairway Caddie
+AI are outside this featured-app milestone and remain unchanged.
+
+The desktop layout now places the app introduction, store actions and native
+screenshot strip side by side. Mobile retains a readable stacked layout with
+44px page-jump links before the gallery. The header's Support link now leads to
+that app's own support/privacy section; Wemo continues to use Google Play reviews.
+Wemo also has a direct FAQ jump. Categories and existing store availability sit
+under the app name; redundant eyebrow labels are removed. At 1440px, Sudoku's
+overview starts around y=882 instead of y=1307. On mobile, support can be reached
+immediately without scrolling through the full product description and FAQ.
+
+A shared, deferred, dependency-free script adds gallery arrows only when the
+strip overflows and expands screenshots in a native dialog. The viewer supports
+previous/next, arrow keys, Tab/Shift+Tab cycling, Escape, a Close button, backdrop
+close, focus restoration and an original-image link. End buttons transfer focus
+when disabled. Missing images have a recoverable error state. Without JavaScript
+or native dialog support, the original direct-image links remain usable, as do
+modifier/middle-click navigation. Reduced-motion settings are respected.
+
+Only six HTML pages and the new versioned `assets/details.css` / `details.js`
+assets implement this change. Product descriptions, features, caveats, Wemo FAQ,
+app-specific support copy and store identities are preserved. Existing images,
+metadata, homepage, shared CSS, privacy pages and `app-ads.txt` are unchanged.
+The two new assets are loaded only by these detail pages.
+
+Verification before publication, on Ubuntu:
+
+- **60 Chromium cases:** all six apps at 320, 375, 768, 1024 and 1440px, in light
+  and dark modes. No horizontal overflow, broken images, script exceptions or
+  failed local responses; one H1 per page. Text contrast is at least **4.67:1**
+  for the measured website text/actions. Page jumps, gallery overflow/end states,
+  screenshot selection, next/previous, Escape and focus restoration pass.
+- **Eight additional behavior scenarios:** JavaScript disabled, missing native
+  dialog support, Control-click, middle-click, keyboard focus cycling/endpoints
+  and Close/backdrop, failed-image recovery, a short landscape viewport, and
+  keyboard/native scrolling with normal-motion gallery controls. The final
+  targeted run includes the focus corrections from independent review and QA.
+- Static checks cover **157 references**, fragment targets, unique IDs, metadata,
+  all existing product/support copy and store URLs. All non-target production
+  files match the fetched baseline. JavaScript syntax and `git diff --check` pass.
+- Local Impeccable layout review and final detector: **zero findings on the six
+  changed pages**. Claude independently assessed the original source/renders,
+  then reviewed the implementation. Its disabled-button focus finding was fixed;
+  browser testing also caught and corrected focus cycling at the dialog boundary.
+  Actual desktop/mobile/light/dark renders and expanded screenshots were inspected.
+- Evidence/scripts/baselines and both Claude reports are stored privately at
+  `~/.local/state/meonmesh-website/2026-11-02-details/`. No QA dependencies or
+  captures are included in the site. Validation is Ubuntu Chromium viewport
+  emulation; no physical-device, native screen-reader or Safari/Firefox audit is
+  claimed. Existing app facts were preserved, not re-audited against new releases.
+
+Publication evidence is recorded below.

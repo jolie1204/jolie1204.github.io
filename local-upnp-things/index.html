@@ -20,33 +20,45 @@
 <meta property="og:image:alt" content="MeOnMesh — small apps for everyday life">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/site.css?v=20261029-2">
+<link rel="stylesheet" href="/assets/details.css?v=20261102-1">
+<script src="/assets/details.js?v=20261102-1" defer></script>
 </head>
-<body>
+<body class="app-detail-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap">
 <a class="brand" href="/" aria-label="MeOnMesh home"><span class="brand-mark" aria-hidden="true">m<span>·</span></span><span>MeOnMesh</span></a>
 <nav aria-label="Main navigation">
-<a href="/#apps">Our apps</a><a href="/#support">Get in touch <span aria-hidden="true">↓</span></a>
+<a href="/#apps">Our apps</a><a href="#app-support">Support</a>
 </nav>
 </header>
 <main id="main" class="detail-main wrap">
 <a class="back-link" href="/#apps">← All apps</a>
+<div class="detail-hero">
 <section class="detail-intro" aria-labelledby="app-title">
+<div class="app-identity">
 <img class="detail-icon" src="/assets/apps/local-upnp-things.webp" width="96" height="96" alt="">
-<div>
-<p class="eyebrow">SMART HOME</p><h1 id="app-title">Smart Home Status</h1><p class="detail-tagline">A clearer picture of your home.</p><p class="detail-description">Check supported Apple Home accessories against your On/Off goals, review changes, and read fresh responses.</p>
+<div><h1 id="app-title">Smart Home Status</h1><p class="detail-meta">Smart Home <span aria-hidden="true">·</span> iPhone</p></div>
+</div>
+<p class="detail-tagline">A clearer picture of your home.</p>
+<p class="detail-description">Check supported Apple Home accessories against your On/Off goals, review changes, and read fresh responses.</p>
 <div class="store-links">
-<a class="store-link" href="https://apps.apple.com/us/app/smart-home-status/id6777620569" aria-label="Smart Home Status on App Store">App Store <span aria-hidden="true">↗</span></a>
+<a class="store-link download-link" href="https://apps.apple.com/us/app/smart-home-status/id6777620569" aria-label="Smart Home Status on App Store">App Store <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
-</div>
+<nav class="detail-nav" aria-label="On this page">
+<a href="#screenshots">Screenshots</a><a href="#overview">About</a><a href="#app-support">Support &amp; privacy</a>
+</nav>
 </section>
-<section class="screenshot-section" aria-labelledby="screenshots-title">
-<div class="section-heading">
-<h2 id="screenshots-title">A closer look.</h2><p>Screenshots from the iPhone App Store listing.</p>
+<section id="screenshots" class="screenshot-section" aria-labelledby="screenshots-title" tabindex="-1">
+<div class="gallery-heading">
+<div><h2 id="screenshots-title">A closer look.</h2><p>Screenshots from the iPhone App Store listing.</p></div>
+<div class="gallery-controls" role="group" aria-label="Screenshot gallery controls" hidden>
+<button class="gallery-control" type="button" data-scroll="-1" aria-label="Previous screenshots"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+<button class="gallery-control" type="button" data-scroll="1" aria-label="Next screenshots"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</div>
 </div>
 <div class="screenshot-gallery" tabindex="0" role="region" aria-label="Smart Home Status screenshots; scroll horizontally for more">
 <figure>
-<a href="/assets/screenshots/local-upnp-things-1.webp" aria-label="View Smart Home Status screenshot: Home and connection choices"><img src="/assets/screenshots/local-upnp-things-1.webp" alt="Smart Home Status: Home and connection choices" width="520" height="1130" loading="lazy"></a><figcaption>Home and connection choices</figcaption>
+<a href="/assets/screenshots/local-upnp-things-1.webp" aria-label="View Smart Home Status screenshot: Home and connection choices"><img src="/assets/screenshots/local-upnp-things-1.webp" alt="Smart Home Status: Home and connection choices" width="520" height="1130" loading="eager" fetchpriority="high"></a><figcaption>Home and connection choices</figcaption>
 </figure>
 <figure>
 <a href="/assets/screenshots/local-upnp-things-2.webp" aria-label="View Smart Home Status screenshot: Apple Home device access"><img src="/assets/screenshots/local-upnp-things-2.webp" alt="Smart Home Status: Apple Home device access" width="520" height="1130" loading="lazy"></a><figcaption>Apple Home device access</figcaption>
@@ -55,10 +67,11 @@
 <a href="/assets/screenshots/local-upnp-things-3.webp" aria-label="View Smart Home Status screenshot: Reusable power checklists"><img src="/assets/screenshots/local-upnp-things-3.webp" alt="Smart Home Status: Reusable power checklists" width="520" height="1130" loading="lazy"></a><figcaption>Reusable power checklists</figcaption>
 </figure>
 </div>
-<p class="gallery-hint">Scroll to explore. Select a screenshot to see it larger.</p>
+<p class="gallery-hint">Select a screenshot to see it larger.</p>
 </section>
+</div>
 <div class="detail-columns">
-<section class="detail-overview" aria-label="About Smart Home Status">
+<section id="overview" tabindex="-1" class="detail-overview" aria-label="About Smart Home Status">
     <p>Smart Home Status checks supported accessories already in Apple Home against your chosen On/Off goals. Review selected changes and read fresh responses after applying them.</p>
     <h2>Apple Home checks and optional local tools</h2>
 <ul>
@@ -88,8 +101,8 @@ No developer-operated cloud account is required. No Home data is supplied as adv
     <h2>Support</h2>
     <p>For support, contact <a href="mailto:meonmesh@gmail.com">meonmesh@gmail.com</a>. Do not send accessory setup codes, passwords or private household identifiers.</p>
 </section>
-<aside class="detail-support" aria-labelledby="help-title">
-<p class="eyebrow">HERE TO HELP</p><h2 id="help-title">Need a hand?</h2><p>For help, email us with the app name, your device model, and what you were trying to do.</p><p><a href="mailto:meonmesh@gmail.com?subject=Smart%20Home%20Status%20support">meonmesh@gmail.com</a></p><p class="support-hint">Please don’t send passwords, setup codes, or private device details.</p><hr><h3>Your privacy</h3><p>Read this app’s data use, advertising details, and privacy choices.</p><a href="/local-upnp-things-privacy/">Smart Home Status privacy policy →</a>
+<aside id="app-support" tabindex="-1" class="detail-support" aria-labelledby="help-title">
+<h2 id="help-title">Need a hand?</h2><p>For help, email us with the app name, your device model, and what you were trying to do.</p><p><a href="mailto:meonmesh@gmail.com?subject=Smart%20Home%20Status%20support">meonmesh@gmail.com</a></p><p class="support-hint">Please don’t send passwords, setup codes, or private device details.</p><hr><h3>Your privacy</h3><p>Read this app’s data use, advertising details, and privacy choices.</p><a href="/local-upnp-things-privacy/">Smart Home Status privacy policy →</a>
 </aside>
 </div>
 </main>

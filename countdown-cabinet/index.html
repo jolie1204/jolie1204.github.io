@@ -20,33 +20,45 @@
 <meta property="og:image:alt" content="MeOnMesh — small apps for everyday life">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/site.css?v=20261029-2">
+<link rel="stylesheet" href="/assets/details.css?v=20261102-1">
+<script src="/assets/details.js?v=20261102-1" defer></script>
 </head>
-<body>
+<body class="app-detail-page">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header wrap">
 <a class="brand" href="/" aria-label="MeOnMesh home"><span class="brand-mark" aria-hidden="true">m<span>·</span></span><span>MeOnMesh</span></a>
 <nav aria-label="Main navigation">
-<a href="/#apps">Our apps</a><a href="/#support">Get in touch <span aria-hidden="true">↓</span></a>
+<a href="/#apps">Our apps</a><a href="#app-support">Support</a>
 </nav>
 </header>
 <main id="main" class="detail-main wrap">
 <a class="back-link" href="/#apps">← All apps</a>
+<div class="detail-hero">
 <section class="detail-intro" aria-labelledby="app-title">
+<div class="app-identity">
 <img class="detail-icon" src="/assets/apps/countdown-cabinet.webp" width="96" height="96" alt="">
-<div>
-<p class="eyebrow">EVERYDAY</p><h1 id="app-title">Countdown Cabinet</h1><p class="detail-tagline">Keep something good on the horizon.</p><p class="detail-description">Count down to birthdays, trips, and important dates with home-screen widgets and reminders you choose.</p>
+<div><h1 id="app-title">Countdown Cabinet</h1><p class="detail-meta">Everyday <span aria-hidden="true">·</span> iPhone &amp; Android</p></div>
+</div>
+<p class="detail-tagline">Keep something good on the horizon.</p>
+<p class="detail-description">Count down to birthdays, trips, and important dates with home-screen widgets and reminders you choose.</p>
 <div class="store-links">
-<a class="store-link" href="https://apps.apple.com/us/app/countdown-cabinet-day-counter/id6775299150" aria-label="Countdown Cabinet on App Store">App Store <span aria-hidden="true">↗</span></a><a class="store-link" href="https://play.google.com/store/apps/details?id=com.appfoundry.countdown_cabinet" aria-label="Countdown Cabinet on Google Play">Google Play <span aria-hidden="true">↗</span></a>
+<a class="store-link download-link" href="https://apps.apple.com/us/app/countdown-cabinet-day-counter/id6775299150" aria-label="Countdown Cabinet on App Store">App Store <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="store-link download-link" href="https://play.google.com/store/apps/details?id=com.appfoundry.countdown_cabinet" aria-label="Countdown Cabinet on Google Play">Google Play <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
-</div>
+<nav class="detail-nav" aria-label="On this page">
+<a href="#screenshots">Screenshots</a><a href="#overview">About</a><a href="#app-support">Support &amp; privacy</a>
+</nav>
 </section>
-<section class="screenshot-section" aria-labelledby="screenshots-title">
-<div class="section-heading">
-<h2 id="screenshots-title">A closer look.</h2><p>Screenshots from the iPhone App Store listing.</p>
+<section id="screenshots" class="screenshot-section" aria-labelledby="screenshots-title" tabindex="-1">
+<div class="gallery-heading">
+<div><h2 id="screenshots-title">A closer look.</h2><p>Screenshots from the iPhone App Store listing.</p></div>
+<div class="gallery-controls" role="group" aria-label="Screenshot gallery controls" hidden>
+<button class="gallery-control" type="button" data-scroll="-1" aria-label="Previous screenshots"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+<button class="gallery-control" type="button" data-scroll="1" aria-label="Next screenshots"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</div>
 </div>
 <div class="screenshot-gallery" tabindex="0" role="region" aria-label="Countdown Cabinet screenshots; scroll horizontally for more">
 <figure>
-<a href="/assets/screenshots/countdown-cabinet-1.webp" aria-label="View Countdown Cabinet screenshot: Home-screen countdown widgets"><img src="/assets/screenshots/countdown-cabinet-1.webp" alt="Countdown Cabinet: Home-screen countdown widgets" width="520" height="1130" loading="lazy"></a><figcaption>Home-screen countdown widgets</figcaption>
+<a href="/assets/screenshots/countdown-cabinet-1.webp" aria-label="View Countdown Cabinet screenshot: Home-screen countdown widgets"><img src="/assets/screenshots/countdown-cabinet-1.webp" alt="Countdown Cabinet: Home-screen countdown widgets" width="520" height="1130" loading="eager" fetchpriority="high"></a><figcaption>Home-screen countdown widgets</figcaption>
 </figure>
 <figure>
 <a href="/assets/screenshots/countdown-cabinet-2.webp" aria-label="View Countdown Cabinet screenshot: Upcoming dates at a glance"><img src="/assets/screenshots/countdown-cabinet-2.webp" alt="Countdown Cabinet: Upcoming dates at a glance" width="520" height="1130" loading="lazy"></a><figcaption>Upcoming dates at a glance</figcaption>
@@ -55,17 +67,18 @@
 <a href="/assets/screenshots/countdown-cabinet-3.webp" aria-label="View Countdown Cabinet screenshot: Create an event and reminder"><img src="/assets/screenshots/countdown-cabinet-3.webp" alt="Countdown Cabinet: Create an event and reminder" width="520" height="1130" loading="lazy"></a><figcaption>Create an event and reminder</figcaption>
 </figure>
 </div>
-<p class="gallery-hint">Scroll to explore. Select a screenshot to see it larger.</p>
+<p class="gallery-hint">Select a screenshot to see it larger.</p>
 </section>
+</div>
 <div class="detail-columns">
-<section class="detail-overview" aria-label="About Countdown Cabinet">
+<section id="overview" tabindex="-1" class="detail-overview" aria-label="About Countdown Cabinet">
 <h2>Made for the way you use it.</h2><h3>Make room for important dates</h3><p>Keep birthdays, trips, anniversaries, and deadlines together. Add an optional time, repeat events yearly, and search your dates.</p><h3>Take a glance at your home screen</h3><p>Choose one event for a Small widget or your next three upcoming events in Medium. Preview your choice in the app’s widget setup.</p><h3>Choose your reminder</h3><p>Set an optional reminder on the day or 1, 7, or 30 days before. Event data stays on your device, with manual JSON backup and restore.</p>
 <section class="detail-note">
 <h2>Good to know</h2><p>Reminder delivery depends on your device settings. Date-only reminders use 9 AM local time. Open the app at least once a year to renew yearly reminders. Widget titles may be visible on your home screen; notes are not shared with widgets. The app contains advertising.</p>
 </section>
 </section>
-<aside class="detail-support" aria-labelledby="help-title">
-<p class="eyebrow">HERE TO HELP</p><h2 id="help-title">Need a hand?</h2><p>For help, email us with the app name, your device model, and what you were trying to do.</p><p><a href="mailto:meonmesh@gmail.com?subject=Countdown%20Cabinet%20support">meonmesh@gmail.com</a></p><p class="support-hint">Please don’t send passwords, setup codes, or private device details.</p><hr><h3>Your privacy</h3><p>Read this app’s data use, advertising details, and privacy choices.</p><a href="/countdown-cabinet-privacy/">Countdown Cabinet privacy policy →</a>
+<aside id="app-support" tabindex="-1" class="detail-support" aria-labelledby="help-title">
+<h2 id="help-title">Need a hand?</h2><p>For help, email us with the app name, your device model, and what you were trying to do.</p><p><a href="mailto:meonmesh@gmail.com?subject=Countdown%20Cabinet%20support">meonmesh@gmail.com</a></p><p class="support-hint">Please don’t send passwords, setup codes, or private device details.</p><hr><h3>Your privacy</h3><p>Read this app’s data use, advertising details, and privacy choices.</p><a href="/countdown-cabinet-privacy/">Countdown Cabinet privacy policy →</a>
 </aside>
 </div>
 </main>
